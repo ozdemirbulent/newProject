@@ -1,0 +1,151 @@
+.dark-theme h1 {
+  color: #fff;
+}
+body.dark-theme {
+  background-color: #181818;
+}
+.dark-theme .container {
+  background-color: #23272f;
+  color: #fff;
+}
+.dark-theme input {
+  background-color: #333;
+  color: #fff;
+}
+.dark-theme input::placeholder {
+  color: #bbb;
+}
+input::placeholder {
+  color: #bbb;
+}
+.dark-theme .btn {
+  background-color: #444;
+  color: #fff;
+}
+.dark-theme .btn:hover {
+  background-color: #222;
+}
+.dark-theme .temperature {
+  color: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+.container {
+  width: 600px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  text-align: center;
+  background-color: yellowgreen;
+}
+h1 {
+  color: rgb(38, 57, 77);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+input {
+  width: 75%;
+  background-color: lightblue;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px 0px 0px 10px;
+  font-size: 20px;
+}
+#submitBtn {
+  cursor: pointer;
+  width: 25%;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon img {
+  width: 100px;
+  height: 100px;
+}
+.temperature {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(38, 57, 77);
+  margin: 20px 0px;
+}
+.details div {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px 0;
+  font-size: 20px;
+  color: rgb(38, 57, 77);
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: inline-block;
+  margin: 5px 3px;
+  transition: transform 0.3s ease;
+  flex-wrap: nowrap;
+}
+.details div:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  .container {
+    width: 90%;
+  }
+  input,
+  #submitBtn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  .temperature {
+    font-size: 30px;
+  }
+  .details div {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+  .description {
+    font-size: 25px;
+    margin: 10px 0;
+  }
+}
+
+.description {
+  font-size: 25px;
+  margin: 10px 0;
+  color: red;
+}
+#theme-toggle:hover {
+  background-color: darkblue;
+  color: white;
+  transform: rotate(360deg);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}

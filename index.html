@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Weather App</title>
+  </head>
+  <body>
+    <button
+      id="theme-toggle"
+      style="
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        padding: 15px;
+        border-radius: 20px;
+        background-color: #007bff;
+        color: black;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      "
+    >
+      Tema Değiştir
+    </button>
+    <div class="container">
+      <h1>Hava Durumu</h1>
+      <form id="form">
+        <input type="text" id="city" placeholder="Şehir Giriniz" required />
+        <button type="submit" class="btn" id="submitBtn">Hava Nasıl</button>
+      </form>
+      <div class="Weather">
+        <div class="icon" id="icon"></div>
+        <div class="temperature" id="temperature"></div>
+        <div class="description" id="description"></div>
+        <div class="details" id="details"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
